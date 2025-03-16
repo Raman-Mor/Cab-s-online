@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>ShopOnline Listing Page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">   
+    <link rel="stylesheet" href="main-style.css">
+    <script src="listing.js"></script>
+    <script src="logout.js"></script>
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <h1 class="text-center text-danger mb-5">Shop Online</h1>
+
+        <div class="section">
+            <a href="index.html" class="btn btn--basic">Home</a>
+            <a href="listing.html" class="btn btn--basic">Listing</a>
+            <a href="bidding.html" class="btn btn--basic">Bidding</a>
+            <a href="maintenance.html" class="btn btn--basic">Maintenance</a>
+            <a href="logout.html" class="btn btn--basic">Log Out</a>
+        </div>
+
+        <hr>
+
+        <p class="text-center">To create a listing, enter listing details below.</p>
+
+        <div id="listingResult" class="mb-4"></div>
+
+        <div class="card">
+            <div class="card-body">
+
+                <form>
+                <fieldset class="border p-4 rounded">
+                    <legend class="h4 text-danger">Seller Details</legend>
+
+                    <div class="mb-3">  
+                        <span class="text-danger">* Required Fields</span></br></br>
+                        
+                        <div class="mb-3">
+                            <label for="itemName" class="form-label">Item Name<span class="redText">*</span></label>
+                            <input type="text" name="itemName" id="itemName" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="categorySelected" class="form-label">Category<span class="redText">*</span></label>
+                            <select name="categorySelected" id="categorySelected" class="form-select">
+                                <option value="camera">Camera</option>
+                                <option value="phone">Phone</option>
+                                <option value="car">Car</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description<span class="redText">*</span></label>
+                            <textarea class="form-control" name="description" id="description" required></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="startPrice" class="form-label">Start Price<span class="redText">*</span></label>
+                                    <input type="number" name="startPrice" id="startPrice" class="form-control" min="0" placeholder="0.00" step="0.01" onchange="setDecimal(this)" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="reservePrice" class="form-label">Reserve Price<span class="redText">*</span></label>
+                                    <input type="number" name="reservePrice" id="reservePrice" class="form-control" min="0" placeholder="0.00" step="0.01" onchange="setDecimal(this)" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <label for="buyNowPrice" class="form-label">Buy It Now Price<span class="redText">*</span></label>
+                                    <input type="number" name="buyNowPrice" id="buyNowPrice" class="form-control" min="0" placeholder="0.00" step="0.01" onchange="setDecimal(this)" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="duration" class="form-label">Duration<span class="redText">*</span></label>
+                            <select name="day" id="day" class="form-select d-inline-block w-auto">
+                                <option>Day</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <select name="hour" id="hour" class="form-select d-inline-block w-auto">
+                                <option>Hour</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="10">10</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                            </select>
+                            <select name="minute" id="minute" class="form-select d-inline-block w-auto">
+                                <option>Min</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                                <option value="51">51</option>
+                                <option value="52">52</option>
+                                <option value="53">53</option>
+                                <option value="54">54</option>
+                                <option value="55">55</option>
+                                <option value="56">56</option>
+                                <option value="57">57</option>
+                                <option value="58">58</option>
+                                <option value="59">59</option>
+                            </select> 
+                            </br></br>
+                        </div>
+                    </div>
+      
+                    <button type="button" class="btn btn-danger mb-2" onclick="getResults()">List It</button>
+                    <button type="reset" class="btn btn-secondary mb-2">Reset</button>
+                </fieldset>
+                </form>
+                </br>
+            </div>
+        </div>
+</body>
+</html>

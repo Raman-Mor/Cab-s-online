@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>ShopOnline Bidding Page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">   
+    <link rel="stylesheet" href="main-style.css">
+    <script src="bidding.js"></script>
+</head>
+
+<body onload="loadItems()">
+
+    <div class="container my-5">
+        <h1 class="text-center text-primary mb-5">Shop Online</h1>
+
+        <div class="section">
+            <a href="index.html" class="btn btn--basic">Home</a >
+            <a href="listing.html" class="btn btn--basic">Listing</a >
+            <a href="bidding.html" class="btn btn--basic">Bidding</a >
+            <a href="maintenance.html" class="btn btn--basic">Maintenance</a >
+            <a href="logout.html" class="btn btn--basic">Log Out</a >
+        </div>
+
+        <hr>
+        <p class="text-center">Browse items up for auction below. Ready to make a move? Click the 'Place Bid' button!</p>
+        <p class="text-danger text-center">Note: Every 5 seconds, we refresh the remaining time and bid prices for items.</p>
+
+        <div id="bidResult" class="mb-4"></div>
+
+        <div id="itemsForAuction"></div>
+    </div>
+</body>
+<script src="bootstrap.bundle.min.js"></script>
+</html>

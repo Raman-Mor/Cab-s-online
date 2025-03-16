@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>ShopOnline Login Page</title>
+        <link rel="stylesheet" href="bootstrap.min.css">   
+        <link rel="stylesheet" href="main-style.css">
+        <script src="maintenance.js"></script>
+        <script src="logout.js"></script>
+    </head>
+<head>
+
+<body>
+
+<div class="container my-5">
+    <h1 class="text-center mb-5 text-primary">Shop Online</h1>
+
+    <div class="section">
+        <a href="index.html" class="btn btn--basic">Home</a >
+        <a href="listing.html" class="btn btn--basic">Listing</a >
+        <a href="bidding.html" class="btn btn--basic">Bidding</a >
+        <a href="maintenance.html" class="btn btn--basic">Maintenance</a >
+        <a href="logout.html" class="btn btn--basic">Log Out</a >
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-center mb-4">
+        <button type="button" id="processAuctionItems" class="btn btn-primary me-2" onclick="processAuctionItems()">Process Auction Items</button>
+        <button type="button" id="generateReport" class="btn btn-primary" onclick="generateReport()">Generate Report</button>
+    </div>
+
+    <div id="processAuctionItemsConfirmation" class="mb-4">
+    </div>
+
+    <div id="report">
+    </div>
+</div>
+</body>
+<script src="bootstrap.bundle.min.js"></script>
+</html>

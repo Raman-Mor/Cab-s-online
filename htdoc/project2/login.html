@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+    	<title>ShopOnline Login Page</title>
+        <link rel="stylesheet" href="bootstrap.min.css">   
+        <link rel="stylesheet" href="main-style.css">
+        <script src="login.js"></script>
+    </head>
+    <body>
+        <div class="container my-5">
+            <h1 class="text-center text-primary mb-5">ShopOnline</h1>
+
+            <div class="section">
+                <a href="index.html" class="btn btn--basic">Home</a >
+                <a href="listing.html" class="btn btn--basic">Listing</a >
+                <a href="bidding.html" class="btn btn--basic">Bidding</a >
+                <a href="maintenance.html" class="btn btn--basic">Maintenance</a >
+                <a href="logout.html" class="btn btn--basic">Log Out</a >
+            </div>
+
+            <hr>
+
+            <div id="log_in_out_Result" class="mb-4"></div>
+
+            <div class="card">
+                <div class="card-body">
+                    <form>    
+                        <fieldset class="border p-4 rounded">
+                            <legend class="h4 text-primary">Login Details</legend>
+                            <div class="mb-3">  
+                                <span class="text-danger">* Required Fields</span></br></br>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+                                    <input type="email" name="email" id="email" class="form-control" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password<span class="text-danger">*</span></label>
+                                    <input type="password" name="password" id="password" class="form-control" minlength="8" maxlength="16" required>
+                                </div> 
+                            </div> 
+               
+                            <button type="button" class="btn btn-primary mb-2" onclick="getLogInResult()">Login</button>
+                            <button type="reset" class="btn btn-secondary mb-2">Reset</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+<script src="bootstrap.bundle.min.js"></script>
+</html>

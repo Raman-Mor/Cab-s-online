@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Listings>
+  <ListedItem>
+    <ItemID>3</ItemID>
+    <ItemName>SONY Alpha ILCE-7M3K Full Frame Mirrorless Camera with 28-70 mm Zoom LensFeaturing Eye AF and 4K movie recording  (Black)</ItemName>
+    <Category>camera</Category>
+    <Description>Sas</Description>
+    <StartPrice>11.00</StartPrice>
+    <ReservePrice>12.00</ReservePrice>
+    <BuyItNowPrice>13.00</BuyItNowPrice>
+    <Duration>2024-04-20 20:49:15</Duration>
+    <CurrentDate>2024-04-13</CurrentDate>
+    <CurrentTime>08:35:15</CurrentTime>
+    <SellerID>1016</SellerID>
+    <Status>sold</Status>
+    <BidderID>1016</BidderID>
+    <BidPrice>13.00</BidPrice>
+  </ListedItem>
+  <ListedItem>
+    <ItemID>4</ItemID>
+    <ItemName>SONY Alpha ILCE-6100Y APS-C Mirrorless Camera with Dual Lens 16-50 mm Zoom Featuring Eye AF and 4K movie recording  (Black)</ItemName>
+    <Category>camera</Category>
+    <Description>Sas</Description>
+    <StartPrice>11.00</StartPrice>
+    <ReservePrice>12.00</ReservePrice>
+    <BuyItNowPrice>13.00</BuyItNowPrice>
+    <Duration>2024-04-22 18:53:17</Duration>
+    <CurrentDate>2024-04-13</CurrentDate>
+    <CurrentTime>08:38:17</CurrentTime>
+    <SellerID>1016</SellerID>
+    <Status>sold</Status>
+    <BidderID>1016</BidderID>
+    <BidPrice>13.00</BidPrice>
+  </ListedItem>
+  <ListedItem>
+    <ItemID>6</ItemID>
+    <ItemName>SROPX MINI Full HD 1080P CCTV WiFi IP Camera with Night Vision, Motion Detection Sports and Action Camera  (Black, 12 MP)</ItemName>
+    <Category>camera</Category>
+    <Description>eweq</Description>
+    <StartPrice>11.00</StartPrice>
+    <ReservePrice>12.00</ReservePrice>
+    <BuyItNowPrice>13.00</BuyItNowPrice>
+    <Duration>2024-04-21 23:40:47</Duration>
+    <CurrentDate>2024-04-13</CurrentDate>
+    <CurrentTime>09:27:47</CurrentTime>
+    <SellerID>1016</SellerID>
+    <Status>failed</Status>
+    <BidderID>1016</BidderID>
+    <BidPrice>9.00</BidPrice>
+  </ListedItem>
+</Listings>
